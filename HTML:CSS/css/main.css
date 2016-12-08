@@ -103,8 +103,8 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  margin-bottom: 20px;
-  padding: 0px 100px;
+  margin-bottom: 1.5%;
+  padding: 0px 7%;
 }
 .brandImageContainer {
   position: relative;
@@ -114,7 +114,7 @@ body {
   justify-content: flex-end;
   padding-right: 0px;
   position: relative;
-  top: 10px;
+  top: .5em;
   font-family: 'Gotham-Book', Fallback, sans-serif;
 }
 .signIn {
@@ -136,7 +136,7 @@ body {
 }
 #topNavUL>li>a {
   padding-right: 0px;
-  padding-left: 35px;
+  padding-left: 2.5em;
   color: #939393;
 }
 #topNavUL>li>a:hover {
@@ -154,7 +154,7 @@ body {
   background-color: #F1F1F1;
   width: 100%;
   display: flex;
-  padding: 2px 100px;
+  padding: 2px 7em;
   box-shadow: 0 10px 15px #D9D9D9;
   margin-bottom: 20px;
   height: 60px;
@@ -342,7 +342,7 @@ input[type="text"] {
 
 .bottomPortion {
   margin-top: 140px;
-  background-image: url('../img/bg-skyline-reSized.jpg');
+  background: -webkit-image-set( url('../img/bg-skyline-reSized.jpg') 1x, url('../img/bg-skyline-reSized-1.5x.jpg') 1.5x );
   height: 50em;
   width: 100%;
 }
@@ -469,13 +469,16 @@ iPad 3        2048×1536  */
 
 /* Tablet Landscape */
 
-@media screen and (max-width: 1060px) {
-  #primary {
+@media screen and (max-width: 1335px) {
+  .topNavContainer {
     width: 67%;
   }
-  #secondary {
-    width: 30%;
-    margin-left: 3%;
+  .brandImageContainer{
+    display: block;
+  }
+  .headerContainer {
+    justify-content: flex-start;
+
   }
 }
 
