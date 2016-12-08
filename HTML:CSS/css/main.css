@@ -125,14 +125,14 @@ body {
   font-family: 'Gotham-Book', Fallback, sans-serif;
   color: #676767;
 }
-.signInIcon{
+.signInIcon {
   font-size: 32px;
   position: relative;
-  padding-left:10px;
-  bottom:94%;
+  padding-left: 10px;
+  bottom: 94%;
   left: 8%;
-  top:12%;
-  color:#676767;
+  top: 12%;
+  color: #676767;
 }
 #topNavUL>li>a {
   padding-right: 0px;
@@ -140,7 +140,7 @@ body {
   color: #939393;
 }
 #topNavUL>li>a:hover {
-  color:#022540;
+  color: #022540;
   background-color: white;
 }
 .hiddenSpan:hover {
@@ -173,10 +173,19 @@ body {
   font-family: 'Gotham-Medium', Fallback, sans-serif;
   letter-spacing: 1px;
 }
+.darkHover:hover {
+  background-color: #022440 !important;
+  color: #F1F1F1;
+  border-color: #F1F1F1;
+}
+.lightHover:hover {
+  background-color: #022440 !important;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
 .bottomUlContainer {
   display: flex;
   justify-content: flex-end;
-  position: relative;
   padding-right: 0px;
 }
 #bottomNavUL {
@@ -191,11 +200,19 @@ body {
   font-family: 'Gotham-Book', Fallback, sans-serif;
   letter-spacing: 1.5px;
 }
+#bottomNavUL>li>a:hover {
+  background-color: #F1F1F1;
+  text-decoration: overline;
+}
 #searchForm {
   padding-left: 0px;
 }
 .form-group {
   padding-right: 5px;
+}
+input[type="text"] {
+  font-family: 'Gotham-Book', Fallback, sans-serif;
+  color: #666666;
 }
 
 /* ############ Users Current Page Navigation (Below Second Navbar) ############ */
@@ -209,6 +226,7 @@ body {
 }
 .inline {
   display: inline-block;
+  font-family: 'Gotham-Book', Fallback, sans-serif;
 }
 .greyFont {
   color: #BFBDBE;
@@ -309,24 +327,26 @@ body {
   font-size: 19px;
   padding-left: 10px;
 }
-.employeeEmail{
+.employeeEmail {
   padding-left: 10px;
-  padding-top:5px;
+  padding-top: 5px;
 }
-.employeeExt{
-  color:#BDBBBC;
+.employeeExt {
+  color: #BDBBBC;
   font-size: 13px;
   padding-left: 10px;
   padding-top: 10px;
 }
+
 /* ############ Bottom Portion ############ */
-.bottomPortion{
+
+.bottomPortion {
   margin-top: 140px;
   background-image: url('../img/bg-skyline-reSized.jpg');
   height: 50em;
   width: 100%;
 }
-.bottomFormContainer{
+.bottomFormContainer {
   background: rgba(255, 255, 255, 0.7);
   width: 45%;
   position: relative;
@@ -334,7 +354,7 @@ body {
   height: 90%;
   top: 5%;
 }
-.formHeader{
+.formHeader {
   font-size: 38px;
   font-family: 'Gotham-Book', Fallback, sans-serif;
   color: #333333;
@@ -342,64 +362,64 @@ body {
   text-align: center;
   margin-top: 30px;
 }
-.inputSpacingLeft{
-  padding-left:35px;
-  padding-top:40px;
+.inputSpacingLeft {
+  padding-left: 35px;
+  padding-top: 40px;
 }
-.inputSpacingRight{
+.inputSpacingRight {
   padding-right: 35px;
-  padding-top:40px;
+  padding-top: 40px;
 }
-.inputSize{
+.inputSize {
   height: 40px;
   width: 100%;
-  padding-left:10px;
+  padding-left: 10px;
 }
-
-.inputSpacingEmail{
-  padding-left:35px;
-  padding-top:15px;
+.inputSpacingEmail {
+  padding-left: 35px;
+  padding-top: 15px;
 }
-.inputSpacingPhone{
+.inputSpacingPhone {
   padding-right: 35px;
   padding-top: 35px;
 }
 ::-webkit-input-placeholder {
-   color: #656565;
-   font-family: 'Gotham-Book', Fallback, sans-serif;
+  color: #656565;
+  font-family: 'Gotham-Book', Fallback, sans-serif;
 }
-.formEmailText{
+.formEmailText {
   font-family: 'Gotham-Book', Fallback, sans-serif;
   font-size: 12px;
 }
-.userMessage{
-  padding-top:35px;
-  padding-left:35px;
-  padding-right:35px;
+.userMessage {
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 textarea {
-    width: 100%;
-    height: 125px;
-    padding:10px;
+  width: 100%;
+  height: 125px;
+  padding: 10px;
 }
-.respondText{
-  margin-top:20px;
-  margin-left:20px;
+.respondText {
+  margin-top: 20px;
+  margin-left: 20px;
   font-size: 12px;
   color: #323335;
   font-family: 'Gotham-Book', Fallback, sans-serif;
 }
-.options{
+.options {
   padding-top: 15px;
   padding-left: 20px;
 }
-input[type="radio"]{
+input[type="radio"] {
   margin: 5px;
 }
-.radioText{
+.radioText {
   color: #343432;
   font-family: 'Gotham-Book', Fallback, sans-serif;
 }
+
 /* ############ General Global Rules ############ */
 
 .iconFontSmall {
@@ -413,7 +433,15 @@ input[type="radio"]{
   position: relative;
   top: 1px;
 }
-
+.navIcon {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+  color: #BEBCBD;
+}
+.spacing {
+  letter-spacing: 1.5px;
+}
 .fullWidth {
   width: 100%;
 }
@@ -433,4 +461,33 @@ a {
 }
 .marginTop {
   margin-top: 0px;
+}
+
+/* ############ Media Queries ############ */
+/*iPhone 6    1334×750
+iPad 3        2048×1536  */
+
+/* Tablet Landscape */
+
+@media screen and (max-width: 1060px) {
+  #primary {
+    width: 67%;
+  }
+  #secondary {
+    width: 30%;
+    margin-left: 3%;
+  }
+}
+
+/* Tabled Portrait */
+
+@media screen and (max-width: 768px) {
+  #primary {
+    width: 100%;
+  }
+  #secondary {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
 }
