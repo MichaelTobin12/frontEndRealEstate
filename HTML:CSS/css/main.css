@@ -118,16 +118,34 @@ body {
   font-family: 'Gotham-Book', Fallback, sans-serif;
 }
 .signIn {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0px 100px;
+  position: absolute;
+  left: 86%;
+  bottom: 95%;
+  /*padding: 0px 150px;*/
   font-family: 'Gotham-Book', Fallback, sans-serif;
   color: #676767;
+}
+.signInIcon{
+  font-size: 32px;
+  position: relative;
+  padding-left:10px;
+  bottom:94%;
+  left: 8%;
+  top:12%;
+  color:#676767;
 }
 #topNavUL>li>a {
   padding-right: 0px;
   padding-left: 35px;
   color: #939393;
+}
+#topNavUL>li>a:hover {
+  color:#022540;
+  background-color: white;
+}
+.hiddenSpan:hover {
+  border-bottom: 3px solid #D2B78E;
+  width: 2px;
 }
 
 /* ############ BOTTOM NAVBAR ############ */
@@ -337,10 +355,7 @@ body {
   width: 100%;
   padding-left:10px;
 }
-::-webkit-input-placeholder {
-   color: #656565;
-   font-family: 'Gotham-Book', Fallback, sans-serif;
-}
+
 .inputSpacingEmail{
   padding-left:35px;
   padding-top:15px;
@@ -348,6 +363,10 @@ body {
 .inputSpacingPhone{
   padding-right: 35px;
   padding-top: 35px;
+}
+::-webkit-input-placeholder {
+   color: #656565;
+   font-family: 'Gotham-Book', Fallback, sans-serif;
 }
 .formEmailText{
   font-family: 'Gotham-Book', Fallback, sans-serif;
@@ -363,6 +382,24 @@ textarea {
     height: 125px;
     padding:10px;
 }
+.respondText{
+  margin-top:20px;
+  margin-left:20px;
+  font-size: 12px;
+  color: #323335;
+  font-family: 'Gotham-Book', Fallback, sans-serif;
+}
+.options{
+  padding-top: 15px;
+  padding-left: 20px;
+}
+input[type="radio"]{
+  margin: 5px;
+}
+.radioText{
+  color: #343432;
+  font-family: 'Gotham-Book', Fallback, sans-serif;
+}
 /* ############ General Global Rules ############ */
 
 .iconFontSmall {
@@ -376,6 +413,7 @@ textarea {
   position: relative;
   top: 1px;
 }
+
 .fullWidth {
   width: 100%;
 }
@@ -395,34 +433,4 @@ a {
 }
 .marginTop {
   margin-top: 0px;
-}
-
-
-
-/*DELETE ME */
-
-.gotham-medium {
-  font-family: 'Gotham-Medium', Fallback, sans-serif;
-}
-.gotham-thin {
-  font-family: 'Gotham-Thin', Fallback, sans-serif;
-}
-.gotham-ultra {
-  font-family: 'Gotham-Ultra', Fallback, sans-serif;
-}
-.gotham-xlight {
-  font-family: 'Gotham-XLight', Fallback, sans-serif;
-}
-.gotham-book {
-  font-family: 'Gotham-Book', Fallback, sans-serif;
-}
-.gotham-bold {
-  font-family: 'Gotham-Bold', Fallback, sans-serif;
-}
-.gotham-black {
-  font-family: 'Gotham-Black', Fallback, sans-serif;
-}
-.paddthat {
-  font-size: 20px;
-  padding-left: 40px;
 }

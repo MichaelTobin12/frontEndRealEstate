@@ -11,8 +11,12 @@
 
 <body>
   <div class="fullPageContainer">
+    <div class="emptySpaceSignInHack"> <!--TODO: Fix this -->
+      &nbsp;
+    </div>
     <div class="signIn">
       Sign In
+      <a href="#"><i class="icon- signInIcon">&#xe80a;</i></a>
     </div>
     <div class="topNavContainer">
       <div class="col-lg-3 brandImageContainer">
@@ -21,12 +25,12 @@
       </div>
       <div class="col-lg-9 headerContainer">
         <ul class="nav navbar-nav" id="topNavUL">
-          <li><a href="#">FIND A HOME</a></li>
-          <li><a href="#">LIST WITH US</a></li>
-          <li><a href="#">COMMUNITIES</a></li>
-          <li><a href="#">AGENTS</a></li>
-          <li><a href="#">RELOCATION</a></li>
-          <li class="active"><a href="#">ABOUT <span class="sr-only">(current)</span></a></li>
+          <li><a href="#"><span class="hiddenSpan">FIND A HOME</span></a></li>
+          <li><a href="#"><span class="hiddenSpan">LIST WITH US</span></a></li>
+          <li><a href="#"><span class="hiddenSpan">COMMUNITIES</span></a></li>
+          <li><a href="#"><span class="hiddenSpan">AGENTS</span></a></li>
+          <li><a href="#"><span class="hiddenSpan">RELOCATION</span></a></li>
+          <li class="active"><a href="#"><span class="hiddenSpan">ABOUT </span><span class="sr-only">(current)</span></a></li>
         </ul>
       </div>
     </div>
@@ -228,37 +232,28 @@
           <div class="row">
             <div class="col-sm-6 col-md-4">
               <div class="respondText">
-                Please Respond:
+                PLEASE RESPOND:
               </div>
               <div class="options">
-
+                <input type="radio" name="phone" value="phone" checked><span class="radioText"> By Phone</span><br>
+                <input type="radio" name="email" value="email"><span class="radioText"> By Email</span><br>
               </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="respondText">
+                IN THE:
+              </div>
+              <div class="options">
+                <input type="radio" name="phone" value="phone" checked><span class="radioText"> Morning</span><br>
+                <input type="radio" name="email" value="email"><span class="radioText"> Afternoon</span><br>
+                <input type="radio" name="email" value="email"><span class="radioText"> Evening</span><br>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <button type="submit" class="btn btn-default noBorderRadius styleButton" style="background:transparent; height:60px; margin-top:60px; width:90%;"><span style="position:relative; left:10px;">SEND<i class="icon- iconFontSmall">&#xe801;</i></span></button>
             </div>
           </div>
         </form>
-      </div>
-    </div>
-    <div class="paddthat">
-      <div class="gotham-medium">
-        AGENTS >
-      </div>
-      <div class="gotham-thin">
-        AGENTS >
-      </div>
-      <div class="gotham-ultra">
-        AGENTS >
-      </div>
-      <div class="gotham-xlight">
-        AGENTS >
-      </div>
-      <div class="gotham-book">
-        AGENTS >
-      </div>
-      <div class="gotham-bold">
-        AGENTS >
-      </div>
-      <div class="gotham-black">
-        AGENTS >
       </div>
     </div>
   </div>
