@@ -25,9 +25,16 @@ $(document).ready(function() {
 			$("#clickEventLink").attr("class", "not-clicked");
 	});
 	//Problem #6
+  var appendAjaxDiv = document.getElementById('jsonResponse');
   $.ajax({url: "ajax_return.html", success: function(result){
        var appendObj = JSON.parse(result);
-       console.log(appendObj);
+       var list = document.createElement('ol');
+       for (var item in appendObj) {
+         $(list).append('<li>', item).
+         append('   -   ').
+         append(appendObj[item]);
+       }
+       $(appendAjaxDiv).append(list)
    }});
 
 
