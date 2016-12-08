@@ -203,8 +203,36 @@
               <span class="formEmailText textStyle">EMAIL ADDRESS</span>
               <input class="inputSize" type="text" name="email" value="" placeholder="Email Address">
             </div>
+            <div class="col-sm-6 inputSpacingPhone">
+              <input class="inputSize" type="text" name="lastName" value="" placeholder="Phone (optional)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 inputSpacingLeft">
+              <input class="inputSize" type="text" name="firstName" value="" placeholder="ZIP Code (Optional)">
+            </div>
             <div class="col-sm-6 inputSpacingRight">
-              <input class="inputSize" type="text" name="lastName" value="" placeholder="Last Name">
+              <input type='text' class="inputSize" list='listid' placeholder="What Brought You Here?">
+              <datalist id='listid'>
+                <option label='Life' value='Life'>
+                <option label='Liberty' value='Liberty'>
+                <option label='Pursuit of Happiness' value='Pursuit of Happiness'>
+              </datalist>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 userMessage">
+              <textarea name="userMessageTextArea" rows="6" cols="35" placeholder="Type your message here"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="respondText">
+                Please Respond:
+              </div>
+              <div class="options">
+
+              </div>
             </div>
           </div>
         </form>

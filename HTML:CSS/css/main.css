@@ -330,20 +330,38 @@ body {
 }
 .inputSpacingRight{
   padding-right: 35px;
-  padding-top:35px;
+  padding-top:40px;
 }
 .inputSize{
   height: 40px;
   width: 100%;
   padding-left:10px;
 }
+::-webkit-input-placeholder {
+   color: #656565;
+   font-family: 'Gotham-Book', Fallback, sans-serif;
+}
 .inputSpacingEmail{
   padding-left:35px;
   padding-top:15px;
 }
+.inputSpacingPhone{
+  padding-right: 35px;
+  padding-top: 35px;
+}
 .formEmailText{
   font-family: 'Gotham-Book', Fallback, sans-serif;
   font-size: 12px;
+}
+.userMessage{
+  padding-top:35px;
+  padding-left:35px;
+  padding-right:35px;
+}
+textarea {
+    width: 100%;
+    height: 125px;
+    padding:10px;
 }
 /* ############ General Global Rules ############ */
 
