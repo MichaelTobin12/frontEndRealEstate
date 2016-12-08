@@ -317,12 +317,33 @@ body {
   top: 5%;
 }
 .formHeader{
-  font-size: 22px;
+  font-size: 38px;
   font-family: 'Gotham-Book', Fallback, sans-serif;
-  color: #666666;
+  color: #333333;
   letter-spacing: 3px;
   text-align: center;
   margin-top: 30px;
+}
+.inputSpacingLeft{
+  padding-left:35px;
+  padding-top:40px;
+}
+.inputSpacingRight{
+  padding-right: 35px;
+  padding-top:35px;
+}
+.inputSize{
+  height: 40px;
+  width: 100%;
+  padding-left:10px;
+}
+.inputSpacingEmail{
+  padding-left:35px;
+  padding-top:15px;
+}
+.formEmailText{
+  font-family: 'Gotham-Book', Fallback, sans-serif;
+  font-size: 12px;
 }
 /* ############ General Global Rules ############ */
 
