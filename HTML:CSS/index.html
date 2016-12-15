@@ -11,7 +11,7 @@
 
 <body>
   <div class="fullPageContainer">
-    <div class="emptySpaceSignInHack"> <!--TODO: Fix this -->
+    <!-- <div class="emptySpaceSignInHack">
       &nbsp;
     </div>
     <div class="signIn">
@@ -52,7 +52,67 @@
           <li class="active"><a href="#">ADVANCED <span class="sr-only">(current)</span></a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
+    <header id="site_header">
+      <div class="nav_container bg-white">
+        <div class="container">
+          <div class="row">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img id="brandLogo" src="img/willis-allen-christies-1x.png" srcset="img/willis-allen-christies-1.5x.png 1.5x, img/willis-allen-christies-2x.png 2x,
+                                         img/willis-allen-christies-3x.png 3x, img/willis-allen-christies-4x.png 4x"></a>
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <span id="signIn">
+                    <a href="#">Sign-In</a>
+                  </span>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">FIND A HOME</a></li>
+                    <li><a href="#">LIST WITH US</a></li>
+                    <li><a href="#">NEIGHBORHOODS</a></li>
+                    <li><a href="#">AGENTS</a></li>
+                    <li><a href="#">RELOCATION</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <!-- <li id="signIn"></li> -->
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="nav_search_container bg-white">
+        <div class="container">
+          <div class="col-lg-5 formContainer">
+            <form class="navbar-form navbar-left" id="">
+              <div class="form-group">
+                <input type="text" class="form-control noBorderRadius" id="" value="Address, City, ZIP or MLS#">
+              </div>
+              <button type="submit" class="btn btn-default noBorderRadius styleButton darkHover" style="background-color: #F1F1F1;">SEARCH ></button>
+            </form>
+          </div>
+          <div class="col-lg-7 bottomUlContainer">
+            <ul class="nav navbar-nav" id="none">
+              <li><a href="#">NEW LISTINGS</a></li>
+              <li><a href="#">OPEN HOUSES</a></li>
+              <li><a href="#">RENTALS</a></li>
+              <li><a href="#">MAP SEARCH</a></li>
+              <li class="active"><a href="#">ADVANCED <span class="sr-only">(current)</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="usersCurrentPageContainer">
       <div class="actualText">
         <div class="inline">
@@ -219,8 +279,8 @@
               <input type='text' class="inputSize" list='listid' placeholder="What Brought You Here?">
               <datalist id='listid'>
                 <option label='Life' value='Life'>
-                <option label='Liberty' value='Liberty'>
-                <option label='Pursuit of Happiness' value='Pursuit of Happiness'>
+                  <option label='Liberty' value='Liberty'>
+                    <option label='Pursuit of Happiness' value='Pursuit of Happiness'>
               </datalist>
             </div>
           </div>
@@ -235,8 +295,10 @@
                 PLEASE RESPOND:
               </div>
               <div class="options">
-                <input type="radio" name="phone" value="phone" checked><span class="radioText"> By Phone</span><br>
-                <input type="radio" name="email" value="email"><span class="radioText"> By Email</span><br>
+                <input type="radio" name="phone" value="phone" checked><span class="radioText"> By Phone</span>
+                <br>
+                <input type="radio" name="email" value="email"><span class="radioText"> By Email</span>
+                <br>
               </div>
             </div>
             <div class="col-sm-6 col-md-4">
@@ -244,9 +306,12 @@
                 IN THE:
               </div>
               <div class="options">
-                <input type="radio" name="phone" value="phone" checked><span class="radioText"> Morning</span><br>
-                <input type="radio" name="email" value="email"><span class="radioText"> Afternoon</span><br>
-                <input type="radio" name="email" value="email"><span class="radioText"> Evening</span><br>
+                <input type="radio" name="phone" value="phone" checked><span class="radioText"> Morning</span>
+                <br>
+                <input type="radio" name="email" value="email"><span class="radioText"> Afternoon</span>
+                <br>
+                <input type="radio" name="email" value="email"><span class="radioText"> Evening</span>
+                <br>
               </div>
             </div>
             <div class="col-sm-12 col-md-4">
