@@ -94,6 +94,9 @@ body {
   margin: 0px;
   background-color: #FFFFFF;
 }
+header{
+  margin-bottom: 15px;
+}
 
 /* ############ TOP NAVBAR ############ */
 
@@ -160,9 +163,17 @@ body {
   height: 60px;
 }
 .formContainer {}
+
 .navbar-form .form-control {
   width: 330px;
   height: 40px;
+}
+.navbar-form{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.bottomContainerPadding{
+  padding-left:0px;
 }
 .styleButton {
   height: 40px;
@@ -650,15 +661,26 @@ body {
 }
 .nav_container{
 }
-
+.navbar-brand{
+  padding-left: 0px;
+}
 .bg-white{
   background-color: #fff;
+}
+.bottomPortionContainer{
+  width: 100%;
+}
+.searchBar{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .container{
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0px
+}
+.container-fluid{
+  padding-left: 0px;
   padding-right: 0px;
 }
 
