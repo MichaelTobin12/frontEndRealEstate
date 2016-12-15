@@ -130,16 +130,12 @@ header{
 }
 .signInIcon {
   font-size: 32px;
-  position: relative;
   padding-left: 10px;
-  bottom: 94%;
-  left: 8%;
-  top: 12%;
   color: #676767;
 }
 #topNavUL>li>a {
-  padding-right: 0px;
-  padding-left: 2.5em;
+  /*padding-right: 0px;
+  padding-left: 2.5em;*/
   color: #939393;
 }
 #topNavUL>li>a:hover {
@@ -148,7 +144,7 @@ header{
 }
 .hiddenSpan:hover {
   border-bottom: 3px solid #D2B78E;
-  width: 2px;
+  width: 10px;
 }
 
 /* ############ BOTTOM NAVBAR ############ */
@@ -636,6 +632,10 @@ body {
 #brandLogo{
   height: auto;
   width: auto;
+  padding-top: 20px;
+}
+.signInIcon{
+
 }
 @media screen and (max-width: 768px) {
   #brandLogo{
@@ -647,6 +647,12 @@ body {
   .form-group{
     display: inline-block;
   }
+  .noDisplay{
+    display: none;
+  }
+  .signInIcon{
+
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -655,6 +661,11 @@ body {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  #brandLogo{
+    display: block;
+  }
+}
 .navbar{
   border: 0px;
   background-color: #fff;
@@ -669,6 +680,7 @@ body {
 }
 .bottomPortionContainer{
   width: 100%;
+  background-color: #F1F1F1;
 }
 .searchBar{
   padding-left: 0px;
