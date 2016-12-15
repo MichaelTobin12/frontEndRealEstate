@@ -195,7 +195,7 @@ header{
   justify-content: flex-end;
   padding-right: 0px;
 }
-#bottomNavUL {
+.searchTextContainer{
   display: flex;
   justify-content: flex-end;
 }
@@ -205,7 +205,7 @@ header{
   padding-left: 30px;
   color: #022341;
   font-family: 'Gotham-Book', Fallback, sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: .5px;
 }
 #bottomNavUL>li>a:hover {
   background-color: #F1F1F1;
@@ -352,6 +352,7 @@ input[type="text"] {
   background: -webkit-image-set( url('../img/bg-skyline-reSized.jpg') 1x, url('../img/bg-skyline-reSized-1.5x.jpg') 1.5x);
   height: 50em;
   width: 100%;
+  background-size: cover;
 }
 .bottomFormContainer {
   background: rgba(255, 255, 255, 0.7);
@@ -528,10 +529,7 @@ a {
   .employeeNumber {
     padding-top: 15%;
   }
-  .mediaMargin {
-    margin-top: 30%;
-    /*top:15%;*/
-  }
+
   .bottomPortion {
     background-image: url('../img/bg-skyline-reSized-longHeight.jpg');
     height: 60em;
@@ -634,14 +632,27 @@ body {
   width: auto;
   padding-top: 20px;
 }
-.signInIcon{
 
-}
 @media screen and (max-width: 768px) {
   #brandLogo{
     width: 70%;
+    padding-top: 0px;
+    padding-left: 30px;
   }
-  #none{
+  #topNavUL{
+    padding-left: 44%;
+    text-align: center;
+  }
+  #signIn{
+    display: flex;
+    padding-left: 50%;
+    float:none;
+    padding-top: 5px;
+  }
+  .navbar-brand{
+    margin-bottom: 20px;
+  }
+  .none{
     display: none;
   }
   .form-group{
@@ -653,18 +664,73 @@ body {
   .signInIcon{
 
   }
+  .navbar-form{
+    padding-left: 40px;
+  }
+  .searchButton{
+    width: 48%;
+  }
+
 }
 
 @media screen and (max-width: 992px) {
   #brandLogo{
     width: 80%;
   }
+  .none{
+    display: none;
+  }
+  #topNavUL{
+    float:left !important;
+    margin-top: 20px;
+  }
+  .navbar{
+    margin-bottom: 0px;
+  }
+  .bottomFormContainer{
+    width: 100%;
+    left:0px;
+  }
+  .namePositioner{
+    font-size: 24px;
+  }
+  .mediaMargin {
+    margin-top: 30%;
+    /*top:15%;*/
+  }
 }
 
 @media screen and (max-width: 1200px) {
   #brandLogo{
     display: block;
+    padding-left: 45px;
   }
+  .navbar-form{
+    padding-left: 45px;
+  }
+  .searchTextContainer{
+    justify-content: flex-start;
+    padding-left: 0px;
+  }
+  #topNavUL{
+    float:left !important;
+    margin-top: 30px;
+  }
+  .navbar{
+    margin-bottom: 0px;
+  }
+  .none{
+    display: none;
+  }
+  .bottomFormContainer{
+    width: 90%;
+    left:5%;
+  }
+  .namePositioner{
+    font-size: 24px;
+  }
+
+
 }
 .navbar{
   border: 0px;
