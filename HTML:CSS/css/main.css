@@ -137,10 +137,10 @@ header{
   /*padding-right: 0px;
   padding-left: 2.5em;*/
   color: #939393;
+  padding-top:0px;
 }
 #topNavUL>li>a:hover {
   color: #022540;
-  background-color: white;
 }
 .hiddenSpan:hover {
   border-bottom: 3px solid #D2B78E;
@@ -227,6 +227,7 @@ input[type="text"] {
 .usersCurrentPageContainer {
   padding: 0px 100px;
   display: inline-block;
+  margin-top:170px;
 }
 .actualText {
   padding: 0px 15px;
@@ -295,7 +296,6 @@ input[type="text"] {
   font-family: 'Gotham-Book', Fallback, sans-serif;
   color: #666666;
   letter-spacing: 3px;
-  text-align: left;
   margin-top: 30px;
 }
 .introMeat {
@@ -486,21 +486,18 @@ a {
   .currentOfficePageHeaderContainer {}
   .currentOfficePageHeaderText {
     font-size: 42px;
-    /*TODO: make media query for >1069 */
   }
-}
-@media screen and (max-width: 1366px) {
   .currentOfficePageHeaderText {
     font-size: 28px;
-    /*TODO: make media query for >1069 */
   }
   .topContentAddress {
-    padding-left: 35%;
+    padding-left: 0%;
     padding-top: 5%;
   }
   .bottomContentContact {
-    padding-left: 35%;
+    padding-left: 0%;
     padding-bottom: 5%;
+    margin-bottom: 0px;
   }
   .headerIntro {
     text-align: center;
@@ -515,7 +512,13 @@ a {
   .namePositioner {
     bottom: 0px;
     left: 17%;
-    font-size: 32px;
+    font-size: 20px;
+  }
+  .employeeContact{
+    padding-left: 11%;
+  }
+  .namePositioner{
+
   }
   .whiteCover {
     bottom: 0px;
@@ -523,7 +526,7 @@ a {
     left: 15%;
   }
   .employeeContact {
-    padding-left: 30%;
+    padding-left: 11%;
     /*padding-bottom:10%;*/
   }
   .employeeNumber {
@@ -551,6 +554,7 @@ a {
   }
   .mediaReset {
     display: inline-block;
+    width:100%;
   }
   .topContentAddress {
     display: inline-block;
@@ -563,7 +567,7 @@ a {
     padding: 0px;
   }
   .headerIntro {
-    padding: 6% 0px;
+    /*padding: 6% 0px;*/
     font-size: 18px;
   }
   .namePositioner {
@@ -626,11 +630,12 @@ body {
   z-index: 100;
   width: 100%;
   box-shadow: 0 4px 11px 0 rgba(0,0,0,.2);
+  position: fixed;
 }
 #brandLogo{
   height: auto;
   width: auto;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -642,15 +647,56 @@ body {
   #topNavUL{
     padding-left: 44%;
     text-align: center;
+    width: 100%;
   }
   #signIn{
     display: flex;
-    padding-left: 50%;
+    padding-left: 45%;
     float:none;
     padding-top: 5px;
   }
-  .navbar-brand{
+  .contentContainer{
+    padding: 0px 10%;
+  }
+  .currentOfficePageHeaderContainer{
+    padding-top:150px;
+  }
+  .usersCurrentPageContainer{
+    display: none;
+  }
+  .currentOfficePageHeaderText{
+    font-size: 20px;
+  }
+  .topContentAddress{
+    padding:0px;
+    display: block;
+    margin-top: 20px !important;
+  }
+  .bottomContentContact{
     margin-bottom: 20px;
+  }
+  .respondText{
+    padding-left: 5%;
+  }
+  .options{
+    padding-left: 5%;
+  }
+  .navbar-brand{
+    margin-bottom: 10px;
+    width:80%;
+    display: flex;
+    justify-content: flex-end;
+    padding:0px;
+    padding-top: 5px;
+  }
+  .whiteCover{
+    height: 15%;
+  }
+  .employeeContact{
+    padding-left: 11%;
+  }
+  .headerIntro{
+    font-size: 30px;
   }
   .none{
     display: none;
@@ -661,11 +707,18 @@ body {
   .noDisplay{
     display: none;
   }
+  .left{
+    display: none;
+  }
+  .right{
+    display: none;
+  }
   .signInIcon{
 
   }
   .navbar-form{
-    padding-left: 40px;
+    padding:0px;
+    margin-top: 12px;
   }
   .searchButton{
     width: 48%;
@@ -683,6 +736,10 @@ body {
   #topNavUL{
     float:left !important;
     margin-top: 20px;
+    padding-left: 0px  !important;
+  }
+  #topNavUL>li>a {
+    padding-top: 20px;
   }
   .navbar{
     margin-bottom: 0px;
@@ -692,18 +749,37 @@ body {
     left:0px;
   }
   .namePositioner{
-    font-size: 24px;
+    font-size: 24px !important;
   }
   .mediaMargin {
     margin-top: 30%;
     /*top:15%;*/
   }
+  .topContentAddress{
+    padding-left: 0px;
+    margin-top: 70%;
+  }
+  .bottomContentContact{
+    padding-left: 0px;
+  }
+  .whiteCover{
+    height: 14% !important;
+  }
+  .employeeContact{
+    padding-left: 11%;
+  }
+  .usersCurrentPageContainer{
+    width: 100%;
+    padding-left: 20%;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
   #brandLogo{
     display: block;
     padding-left: 45px;
+    padding-top: 0px;
   }
   .navbar-form{
     padding-left: 45px;
@@ -714,10 +790,18 @@ body {
   }
   #topNavUL{
     float:left !important;
-    margin-top: 30px;
+    margin-top: 0px;
+    padding-top:0px;
+    padding-left: 15%;
+  }
+  #topNavUL>li>a {
+    padding-top: 20px;
   }
   .navbar{
     margin-bottom: 0px;
+  }
+  .namePositioner{
+    font-size: 16px;
   }
   .none{
     display: none;
@@ -726,23 +810,24 @@ body {
     width: 90%;
     left:5%;
   }
-  .namePositioner{
-    font-size: 24px;
+  .employeeContact{
+    padding-left: 11%;
   }
-
-
+  .searchBar{
+    width: 100%;
+  }
 }
+
 .navbar{
   border: 0px;
   background-color: #fff;
 }
 .nav_container{
+  width: 100%;
+  background-color: #fff;
 }
 .navbar-brand{
   padding-left: 0px;
-}
-.bg-white{
-  background-color: #fff;
 }
 .bottomPortionContainer{
   width: 100%;
